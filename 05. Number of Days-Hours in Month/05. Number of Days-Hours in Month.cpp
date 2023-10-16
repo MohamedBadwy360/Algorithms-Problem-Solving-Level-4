@@ -31,7 +31,9 @@ bool is_leap_year(unsigned short year)
 
 unsigned short number_of_days_in_month(unsigned short year, unsigned short month)
 {
-    if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+    if (month < 1 || month > 12)
+        return 0;
+    else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
         return 31;
     else if (month == 2)
         return is_leap_year(year) ? 29 : 28;
