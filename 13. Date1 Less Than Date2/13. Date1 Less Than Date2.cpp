@@ -52,20 +52,11 @@ s_date read_date()
 
 bool is_date1_before_date2(s_date date1, s_date date2)
 {
-    if (date1.year < date2.year)
-        return true;
-    else if (date1.year == date2.year)
-    {
-        if (date1.month < date2.month)
-            return true;
-        else if (date1.month == date2.month)
-        {
-            if (date1.day < date2.day)
-                return true;
-        }
-    }
-    else
-        return false;    
+    return  (date1.year < date2.year) ?
+        true : ((date1.year == date2.year) ?
+            (date1.month < date2.month ?
+                true : (date1.month == date2.month ?
+                    date1.day < date2.day : false)) : false); 
 }
 
 int main()
