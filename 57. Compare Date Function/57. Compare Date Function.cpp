@@ -72,7 +72,7 @@ st_date read_full_date()
 
 enum en_compare_date { before = -1, equal = 0, after = 1 };
 
-en_compare_date compare_date(st_date date1, st_date date2)
+en_compare_date compare_dates(st_date date1, st_date date2)
 {
     if (is_date1_after_date2(date1, date2))
         return en_compare_date::after;
@@ -87,6 +87,6 @@ int main()
     st_date date1 = read_full_date();
     st_date date2 = read_full_date();
 
-    cout << "Compare result: " << compare_date(date1, date2) << endl;
+    cout << "Compare result: " << compare_dates(date1, date2) << endl;
 }
 
