@@ -33,18 +33,6 @@ vector<string> split_string(string sentence, string delim = " ")
     return words;
 }
 
-string join_string(vector <string>& words, string delim = " ")
-{
-    string sentence = "";
-
-    for (string& word : words)
-    {
-        sentence += word + delim;
-    }
-
-    return (sentence.substr(0, sentence.length() - delim.length()));
-}
-
 string read_date_string(string message)
 {
     string date_string;
