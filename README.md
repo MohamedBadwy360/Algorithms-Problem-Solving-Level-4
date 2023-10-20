@@ -12,6 +12,6 @@ The Course is about Algorithms & Problem Solving.
 
 ---
 
-##`Certificate`
+## `Certificate`
 
 ![Ceritficate](/08%20-%20Algorithms%20&%20Problem%20Solving%20Level%204.jpg)
